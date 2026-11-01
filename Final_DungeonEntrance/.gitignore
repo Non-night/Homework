@@ -1,0 +1,11 @@
+# Personal notes and raw captures: keep locally; export assets and Wwise Originals are retained.
+/private/
+/audio/raw/
+# Wwise generated caches and personal settings. Keep .wproj, .wwu and Originals.
+**/.cache/
+**/.backup/
+**/*.wsettings
+**/*.prof
+**/GeneratedSoundBanks/
+.DS_Store
+Thumbs.db

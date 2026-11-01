@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680">
+<rect width="1200" height="680" fill="#141b24"/><text x="60" y="64" fill="#f1f4f7" font-size="30" font-family="Microsoft YaHei, sans-serif">废弃地牢入口 · 声源与空间概念图</text>
+<path d="M70 160 L1060 250 L1060 430 L70 520 Z" fill="#303b49" stroke="#8293a7" stroke-width="3"/><path d="M70 520 L1060 430 L1060 470 L70 580 Z" fill="#222b35"/>
+<path d="M220 340 L970 340" stroke="#9aaabd" stroke-width="2" stroke-dasharray="10 10"/>
+<circle cx="220" cy="340" r="26" fill="#efbf73"/><text x="100" y="300" fill="#efbf73" font-size="23" font-family="Microsoft YaHei">入口 / 听者</text>
+<circle cx="420" cy="400" r="15" fill="#6fc9e5"/><text x="340" y="458" fill="#9ddff1" font-size="22" font-family="Microsoft YaHei">近处：偶发滴水</text>
+<circle cx="880" cy="300" r="15" fill="#c3bddc"/><text x="760" y="230" fill="#d5cfea" font-size="22" font-family="Microsoft YaHei">远处：松动铁链</text>
+<path d="M1000 365 Q800 390 610 355 T300 365" stroke="#76a392" stroke-width="5" fill="none"/><text x="510" y="550" fill="#a9cfbe" font-size="22" font-family="Microsoft YaHei">持续层：沿通道流动的低强度风声</text>
+<text x="60" y="630" fill="#a8b6c7" font-size="18" font-family="Microsoft YaHei">原创示意图 · 非游戏截图 · 不按比例 · 先建立持续基底，再叠加间歇事件</text></svg>

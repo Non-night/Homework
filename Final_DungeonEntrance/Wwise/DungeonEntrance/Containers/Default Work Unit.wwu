@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{112EA672-95B9-4569-8FCC-B1B16D88E97C}" SchemaVersion="133">
+	<Containers>
+		<WorkUnit Name="Default Work Unit" ID="{112EA672-95B9-4569-8FCC-B1B16D88E97C}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="amb_dungeon_wind_loop" ID="{08BBF28F-B657-4048-AECC-8BC4C2EE27CC}" ShortID="652919478">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{719B894A-8743-41BE-95AF-9CEE0B5A6679}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CB67439F-4D97-4718-8888-44744C2D4335}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="amb_dungeon_wind_loop" ID="{B93EBE2A-671A-4427-9E4D-E32D8498AC83}">
+							<Language>SFX</Language>
+							<AudioFile>amb_dungeon_wind_loop.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="26167706"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="amb_dungeon_wind_loop" ID="{B93EBE2A-671A-4427-9E4D-E32D8498AC83}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<RandomSequenceContainer Name="RC_WaterDrops" ID="{8ED58A0F-F754-4216-A099-6B5059F0E187}" ShortID="751790001">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+						<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+						<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+						<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+						<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="5">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{57B8CCBD-51C3-400A-987D-5313F056C3ED}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="2"/>
+											<Property Name="Min" Type="Real64" Value="-2"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-12</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<Custom>
+								<Attenuation Name="Attenuation (Custom)" ID="{AC77A422-69AC-486E-9857-172786AFC958}" ShortID="854237692">
+									<PropertyList>
+										<Property Name="RadiusMax" Type="Real64" Value="15"/>
+									</PropertyList>
+									<CurveUsageInfoList>
+										<VolumeDryUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+												<Curve Name="VolumeDry" ID="{DFABFD13-6085-4468-82F6-068020BCE3BA}">
+													<PropertyList>
+														<Property Name="Flags" Type="int32" Value="3"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>0</YPos>
+															<Flags>5</Flags>
+														</Point>
+														<Point>
+															<XPos>15</XPos>
+															<YPos>-48</YPos>
+															<Flags>37</Flags>
+														</Point>
+													</PointList>
+												</Curve>
+											</CurveUsageInfo>
+										</VolumeDryUsage>
+										<VolumeWetGameUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+										</VolumeWetGameUsage>
+										<VolumeWetUserUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+										</VolumeWetUserUsage>
+										<LowPassFilterUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</LowPassFilterUsage>
+										<HighPassFilterUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</HighPassFilterUsage>
+										<DualShelfUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</DualShelfUsage>
+										<SpreadUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</SpreadUsage>
+										<FocusUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</FocusUsage>
+										<ObstructionVolumeUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</ObstructionVolumeUsage>
+										<ObstructionLPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</ObstructionLPFUsage>
+										<ObstructionHPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</ObstructionHPFUsage>
+										<ObstructionDSFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</ObstructionDSFUsage>
+										<OcclusionVolumeUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</OcclusionVolumeUsage>
+										<OcclusionLPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</OcclusionLPFUsage>
+										<OcclusionHPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</OcclusionHPFUsage>
+										<OcclusionDSFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</OcclusionDSFUsage>
+										<DiffractionVolumeUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</DiffractionVolumeUsage>
+										<DiffractionLPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</DiffractionLPFUsage>
+										<DiffractionHPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</DiffractionHPFUsage>
+										<DiffractionDSFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</DiffractionDSFUsage>
+										<TransmissionVolumeUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</TransmissionVolumeUsage>
+										<TransmissionLPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</TransmissionLPFUsage>
+										<TransmissionHPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</TransmissionHPFUsage>
+										<TransmissionDSFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</TransmissionDSFUsage>
+									</CurveUsageInfoList>
+								</Attenuation>
+							</Custom>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{719B894A-8743-41BE-95AF-9CEE0B5A6679}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CB67439F-4D97-4718-8888-44744C2D4335}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="sfx_water_drop_01" ID="{18B8635A-34BC-4CDA-AF33-A5CE2FC49712}" ShortID="967190144">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{719B894A-8743-41BE-95AF-9CEE0B5A6679}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CB67439F-4D97-4718-8888-44744C2D4335}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_water_drop_01" ID="{E37E4D33-03FF-4254-8B86-DFF5BBF1C015}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_water_drop_01.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="542408644"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_water_drop_01" ID="{E37E4D33-03FF-4254-8B86-DFF5BBF1C015}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_water_drop_02" ID="{2D9CE853-4983-4212-8064-51E0AA496068}" ShortID="103362195">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{719B894A-8743-41BE-95AF-9CEE0B5A6679}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CB67439F-4D97-4718-8888-44744C2D4335}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_water_drop_02" ID="{6FFAE7ED-DF5E-4850-AE5D-ACAD550F2776}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_water_drop_02.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="490008887"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_water_drop_02" ID="{6FFAE7ED-DF5E-4850-AE5D-ACAD550F2776}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_water_drop_03" ID="{87239A47-A0DC-4C51-B467-619EB54B5A74}" ShortID="234072976">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{719B894A-8743-41BE-95AF-9CEE0B5A6679}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CB67439F-4D97-4718-8888-44744C2D4335}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_water_drop_03" ID="{4F099EED-242B-487B-92F2-2B9B22B857B2}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_water_drop_03.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="35872463"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_water_drop_03" ID="{4F099EED-242B-487B-92F2-2B9B22B857B2}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_water_drop_04" ID="{3BD84DC7-6659-4147-9136-DF8B13805B79}" ShortID="1006791769">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{719B894A-8743-41BE-95AF-9CEE0B5A6679}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CB67439F-4D97-4718-8888-44744C2D4335}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_water_drop_04" ID="{F87364F0-DEBC-4D5E-9EA2-F98EDB654C30}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_water_drop_04.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="922573738"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_water_drop_04" ID="{F87364F0-DEBC-4D5E-9EA2-F98EDB654C30}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="RC_ChainRattle" ID="{EA44E761-CD83-403E-BB19-256E58961FAD}" ShortID="606556819">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+						<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+						<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+						<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+						<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="15">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{07F684DD-BE20-4563-95E5-0AA06E273206}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="5"/>
+											<Property Name="Min" Type="Real64" Value="-5"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-15</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<Custom>
+								<Attenuation Name="Attenuation (Custom)" ID="{3D3CF57F-F11C-452D-9A25-49FB6422EE6B}" ShortID="127699189">
+									<PropertyList>
+										<Property Name="RadiusMax" Type="Real64" Value="30"/>
+									</PropertyList>
+									<CurveUsageInfoList>
+										<VolumeDryUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+												<Curve Name="VolumeDry" ID="{4EEE2734-2A90-4C1A-9680-5883EC8B0A1A}">
+													<PropertyList>
+														<Property Name="Flags" Type="int32" Value="3"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>0</YPos>
+															<Flags>5</Flags>
+														</Point>
+														<Point>
+															<XPos>30</XPos>
+															<YPos>-48</YPos>
+															<Flags>37</Flags>
+														</Point>
+													</PointList>
+												</Curve>
+											</CurveUsageInfo>
+										</VolumeDryUsage>
+										<VolumeWetGameUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+										</VolumeWetGameUsage>
+										<VolumeWetUserUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+										</VolumeWetUserUsage>
+										<LowPassFilterUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</LowPassFilterUsage>
+										<HighPassFilterUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</HighPassFilterUsage>
+										<DualShelfUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</DualShelfUsage>
+										<SpreadUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</SpreadUsage>
+										<FocusUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</FocusUsage>
+										<ObstructionVolumeUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</ObstructionVolumeUsage>
+										<ObstructionLPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</ObstructionLPFUsage>
+										<ObstructionHPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</ObstructionHPFUsage>
+										<ObstructionDSFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</ObstructionDSFUsage>
+										<OcclusionVolumeUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</OcclusionVolumeUsage>
+										<OcclusionLPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</OcclusionLPFUsage>
+										<OcclusionHPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</OcclusionHPFUsage>
+										<OcclusionDSFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</OcclusionDSFUsage>
+										<DiffractionVolumeUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</DiffractionVolumeUsage>
+										<DiffractionLPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</DiffractionLPFUsage>
+										<DiffractionHPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</DiffractionHPFUsage>
+										<DiffractionDSFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</DiffractionDSFUsage>
+										<TransmissionVolumeUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</TransmissionVolumeUsage>
+										<TransmissionLPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</TransmissionLPFUsage>
+										<TransmissionHPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</TransmissionHPFUsage>
+										<TransmissionDSFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</TransmissionDSFUsage>
+									</CurveUsageInfoList>
+								</Attenuation>
+							</Custom>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{719B894A-8743-41BE-95AF-9CEE0B5A6679}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CB67439F-4D97-4718-8888-44744C2D4335}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="sfx_chain_rattle_01" ID="{BE212F75-52E0-45D7-9D9E-8DB796899C24}" ShortID="208350660">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{719B894A-8743-41BE-95AF-9CEE0B5A6679}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CB67439F-4D97-4718-8888-44744C2D4335}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_chain_rattle_01" ID="{32E322F9-09AD-4E0E-8B76-2715361D34AC}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_chain_rattle_01.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1071194866"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_chain_rattle_01" ID="{32E322F9-09AD-4E0E-8B76-2715361D34AC}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_chain_rattle_02" ID="{CBE18727-26F7-4567-823E-EDACBDF66B2D}" ShortID="419654410">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{719B894A-8743-41BE-95AF-9CEE0B5A6679}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CB67439F-4D97-4718-8888-44744C2D4335}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_chain_rattle_02" ID="{81352768-92C8-43F5-AA7B-19A8D1A01712}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_chain_rattle_02.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="357116236"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_chain_rattle_02" ID="{81352768-92C8-43F5-AA7B-19A8D1A01712}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_chain_rattle_03" ID="{49C197BD-5BE8-4B84-A6DB-A775B23B8AAC}" ShortID="964352936">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{719B894A-8743-41BE-95AF-9CEE0B5A6679}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CB67439F-4D97-4718-8888-44744C2D4335}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_chain_rattle_03" ID="{5D0375EE-76D8-4695-A367-F2631062BB45}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_chain_rattle_03.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="781668075"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_chain_rattle_03" ID="{5D0375EE-76D8-4695-A367-F2631062BB45}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_chain_rattle_04" ID="{A689389D-7382-4A96-81AF-D31C03315C0D}" ShortID="892420385">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{719B894A-8743-41BE-95AF-9CEE0B5A6679}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CB67439F-4D97-4718-8888-44744C2D4335}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_chain_rattle_04" ID="{BA8ECA8C-17E1-4D3A-BD07-26645BD1F57C}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_chain_rattle_04.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="908447218"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_chain_rattle_04" ID="{BA8ECA8C-17E1-4D3A-BD07-26645BD1F57C}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+			</ChildrenList>
+		</WorkUnit>
+	</Containers>
+</WwiseDocument>

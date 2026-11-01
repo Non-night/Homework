@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{BE017E82-2CB3-4847-BBA2-42F9109E8D42}" SchemaVersion="133">
+	<SoundcasterSessions>
+		<WorkUnit Name="Default Work Unit" ID="{BE017E82-2CB3-4847-BBA2-42F9109E8D42}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="SC_DungeonEntrance" ID="{FBA040B7-A049-49D0-B9F6-0EFA4ACE377A}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="amb_dungeon_wind_loop" ID="{08BBF28F-B657-4048-AECC-8BC4C2EE27CC}" WorkUnitID="{112EA672-95B9-4569-8FCC-B1B16D88E97C}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="RC_WaterDrops" ID="{8ED58A0F-F754-4216-A099-6B5059F0E187}" WorkUnitID="{112EA672-95B9-4569-8FCC-B1B16D88E97C}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="RC_ChainRattle" ID="{EA44E761-CD83-403E-BB19-256E58961FAD}" WorkUnitID="{112EA672-95B9-4569-8FCC-B1B16D88E97C}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+					</ModuleList>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundcasterSessions>
+</WwiseDocument>
